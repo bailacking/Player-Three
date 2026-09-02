@@ -32,10 +32,12 @@
 
 void setup() {
   Serial.begin(115200);
+  delay(2000);   // 32U4 USB-CDC 初始化需 ~1-2s，等就绪再打印，否则开机首行被吞（2026-09-02 W1 排障）
   Mouse.begin();
 
 #if USE_SIM == 1
   Serial.println(F("[SIM] receiver 串口打桩模式: 等待 8 字节帧..."));
+  Serial.println(F("[SIM] 板子活着。在此窗口输入任意 ≥8 字节测试联调"));
 #else
   radio.begin();
   radio.setChannel(76);
