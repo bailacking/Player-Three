@@ -4,8 +4,8 @@
 
 ## 基本信息
 - 项目名：playerthree（GitHub 仓库名 Player-Three）
-- 负责人：bailacking（即大帅本人，厦门大学软件专业学生）
-- GitHub：私有仓库 https://github.com/bailacking/Player-Three（对外 404 属正常）
+- 负责人：bailacking（项目创建者）
+- GitHub：公开仓库 https://github.com/bailacking/Player-Three（2026-08-29 大帅转公开，已同步）
 
 ## 产品定义
 - 形态：头戴式鼠标（head-mounted mouse）
