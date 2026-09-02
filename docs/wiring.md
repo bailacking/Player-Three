@@ -60,7 +60,7 @@
 
 1. **两块板都是 Pro Micro**：USB 直插烧录，无需下载器；板卡选「Arduino Micro / Leonardo（32U4）」
 2. 接收端代码只能在 32U4 板编译；UNO 报 `Mouse was not declared` 属正常
-3. 真机模式需装库：`RF24`、`MPU6050 by Jeff Rowberg`（库管理器搜索）
+3. 真机模式库**已装**：`RF24@1.6.2`、`MPU6050@1.4.5`（2026-09-02 arduino-cli 安装，位于 Arduino 库管理器 user 层；重装系统后需重装：库管理器搜索安装即可）
 4. MPU6050 出厂偏移：到手跑官方 `IMU_Zero` 示例，把 `head_unit.ino` 三个 `setX/Y/ZGyroOffset` 占位值换实测
 5. 回报率 1000Hz = 需改 32U4 USB 描述符 polling=1ms；改不动退 500Hz（代码双档自动）
 6. nRF24 3.3V 走线短；接收器天线朝上，插后置 USB
